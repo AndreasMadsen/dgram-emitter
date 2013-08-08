@@ -70,7 +70,7 @@ This is the underlying `UDP` socket, for its API please the the node.js
 [documentation](http://nodejs.org/api/dgram.html).
 
 ### ee.emit(eventName, [args], [...])
-### ee.on(eventName, [args], [...])
+### ee.on(eventName, callback)
 
 The `DgramEmitter` inherits all the methods from [EventEmitter](http://nodejs.org/api/events.html).
 
