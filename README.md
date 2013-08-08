@@ -64,13 +64,13 @@ done the `callback` will be executed.
 This will close the underlying `UDP` socket preventing more events from being
 rescived.
 
-## ee.socket
+### ee.socket
 
 This is the underlying `UDP` socket, for its API please the the node.js
 [documentation](http://nodejs.org/api/dgram.html).
 
-## ee.emit(eventName, [args], [...])
-## ee.on(eventName, [args], [...])
+### ee.emit(eventName, [args], [...])
+### ee.on(eventName, [args], [...])
 
 The `DgramEmitter` inherits all the methods from [EventEmitter](http://nodejs.org/api/events.html).
 
