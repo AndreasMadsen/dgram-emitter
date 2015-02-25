@@ -30,7 +30,7 @@ function DgramEmitter(type) {
   var self = this;
 
   // Setup UDP socket
-  this.socket = dgram.createSocket(type || 'udp4');
+  this.socket = dgram.createSocket({type: type || 'udp4', reuseAddr: true});
 
   // Setup message handler
   this.socket.on('message', function (data) {

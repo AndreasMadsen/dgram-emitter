@@ -1,7 +1,7 @@
 {
   "name": "dgram-emitter",
   "description": "Very simple EventEmitter on top of a UDP server/client",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "author": "Andreas Madsen <amwebdk@gmail.com>",
   "main": "./dgram-emitter.js",
   "scripts": {
@@ -16,11 +16,8 @@
     "event emitter"
   ],
   "devDependencies": {
-    "tap": "0.4.x"
+    "tap": "0.6.x",
+    "async": "0.9.x"
   },
-  "license": "MIT",
-  "engines": {
-    "node": "0.10",
-    "npm": "1"
-  }
+  "license": "MIT"
 }

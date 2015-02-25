@@ -89,11 +89,11 @@ test('two dgram emitters can communicate', function (t) {
       ee2.listen(PORT);
 
   bothEvent(ee1, ee2, function (err, got) {
-    t.equal(err, null);
+    t.ifError(err);
     t.deepEqual(got, ['from 1', 'from 1']);
 
     bothEvent(ee1, ee2, function (err, got) {
-      t.equal(err, null);
+      t.ifError(err);
       t.deepEqual(got, ['from 2', 'from 2']);
 
       bothClose(ee1, ee2, function () {
